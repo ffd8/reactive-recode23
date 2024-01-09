@@ -18,14 +18,8 @@
 		// update sketches list here!
 		var sketchesList = [
 			"P5L_reactive-recode-23-intro",
-			// 'tedtest',
-			// 'luisa_moritz' ,
-			// 'Anja-Valentina',
-			// 'Auriane_Aiste',
-			// 'Lynn-Mia',
-			// 'Mark-Yoana',
-			// 'vlady_mina',
-			// 'judy_michelle'
+			// 'testing',
+			
 		]
 	</script>
 
@@ -793,6 +787,10 @@ function println(msg){
 						sHTML += '<div class="subhead">TITLE</div>'+sketches[i].credits.recode_title+'<br>';
 						sHTML += '<div class="subhead">MEDIUM</div>'+sketches[i].credits.recode_medium+'<br>';
 						sHTML += '<div class="subhead">YEAR</div>'+sketches[i].credits.recode_year+'<br>';
+						if(sketches[i].credits.recode_url != ''){
+							sHTML += '<div class="subhead">LINK</div><a href="'+sketches[i].credits.recode_url+'" target="_blank">More Info...</a><br>';
+						}
+						
 						sHTML += '<div class="subhead">ORIGINAL</div><img class="sketch-image" src="sketches/'+sketches[i].fileName+'.jpg">';
 						sHTML += '</div>';
 					}
